@@ -1,0 +1,95 @@
+@media (max-width:1092px){
+
+    html{
+        font-size: 80%;
+    }
+
+    .header{
+        padding:1.5rem 2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+
+}
+
+@media (max-width:768px){
+
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top:100%; right: -100%;
+        background: #fff;
+        width: 200px;
+        height: calc(50vh -2.5rem);
+    }
+
+    .header .navbar.active{
+        right:0;
+    }
+
+    .header .navbar a{
+        color:var(--black);
+        display: block;
+        margin:1rem;
+        padding:.5rem;
+        font-size: 1.3rem;
+    }
+
+    .header .search-form{
+        width: 50%;
+        right: 2rem;
+    }
+
+    .home{
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home .content h3{
+        font-size:1 .5rem;
+    }
+
+    .home .content p{
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 75%;
+    }
+    
+.products .box-container .box .image{
+    padding: 2.5rem 0;
+}
+
+.products .box-container .box .image img{
+    height: 6rem;
+}
+.blogs .box-container .box .image{
+    height: 10rem;
+    overflow:hidden;
+    width: 100%;
+}
+.blogs .box-container .box .content p{
+    font-size: .6rem;
+} 
+
+.blogs .box-container .box .image img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+.blogs .box-container .box:hover .image img{
+    transform: scale(1.2);
+}
+
+}
